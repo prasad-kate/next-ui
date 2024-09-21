@@ -7,7 +7,7 @@ function RootLayout({ children }: RootLayoutProps) {
       <div className="w-[250px] h-screen bg-gray-50 rounded-r-lg">
         <RootLayoutSidebar />
       </div>
-      <div className="flex-1 h-screen max-h-screen overflow-auto">
+      <div className="flex-1 h-screen max-h-screen overflow-auto p-5">
         {children}
       </div>
     </div>

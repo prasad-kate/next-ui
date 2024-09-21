@@ -12,3 +12,7 @@ export interface MenuItemProps {
   path: string;
   name: string;
 }
+
+export interface TitleProps {
+  title: string;
+}

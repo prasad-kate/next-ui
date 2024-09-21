@@ -15,4 +15,9 @@ export interface MenuItemProps {
 
 export interface TitleProps {
   title: string;
+  className?: string;
 }
+
+export type InputVariants = "flat" | "faded" | "bordered" | "underlined";
+
+export type InputRadius = "full" | "lg" | "md" | "sm" | "none";

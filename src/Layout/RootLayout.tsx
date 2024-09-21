@@ -3,7 +3,7 @@ import RootLayoutSidebar from "./RootLayoutSidebar";
 
 function RootLayout({ children }: RootLayoutProps) {
   return (
-    <div className="flex items-center gap-5">
+    <div className="flex items-center">
       <div className="w-[250px] h-screen bg-gray-50 rounded-r-lg">
         <RootLayoutSidebar />
       </div>

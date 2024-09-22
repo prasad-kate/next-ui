@@ -1,5 +1,6 @@
 import WithRootLayout from "../../HOCs/withRootLayout";
 import DateInputs from "./components/DateInputs";
+import RadioGroups from "./components/RadioGroups";
 import SelectInputs from "./components/SelectInputs";
 import SwitchInputs from "./components/SwitchInputs";
 import TextAreaInputs from "./components/TextAreaInputs";
@@ -12,6 +13,7 @@ function Inputs() {
       <DateInputs />
       <SelectInputs />
       <TextAreaInputs />
+      <RadioGroups />
       <SwitchInputs />
     </div>
   );

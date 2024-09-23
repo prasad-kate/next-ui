@@ -9,4 +9,8 @@ export const menuItems: MenuItemProps[] = [
     name: "Inputs",
     path: "inputs",
   },
+  {
+    name: "Global Inputs",
+    path: "global-inputs",
+  },
 ];

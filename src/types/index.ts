@@ -1,3 +1,4 @@
+import { DatePickerProps, InputProps, SelectProps } from "@nextui-org/react";
 import { ReactNode } from "react";
 
 export interface RootLayoutProps {
@@ -21,3 +22,29 @@ export interface TitleProps {
 export type InputVariants = "flat" | "faded" | "bordered" | "underlined";
 
 export type InputRadius = "full" | "lg" | "md" | "sm" | "none";
+
+export interface GlobalTextInputProps extends InputProps {
+  name: string;
+  label: string;
+  required?: boolean;
+}
+
+export interface GlobalDatePickerProps
+  extends Omit<DatePickerProps, "value" | "onChange"> {
+  name: string;
+  label: string;
+  required?: boolean;
+}
+
+export interface Option {
+  value: string;
+  display_name: string;
+}
+
+export interface GlobalSelectInputProps
+  extends Omit<SelectProps, "onChange" | "value" | "children"> {
+  name: string;
+  label: string;
+  required?: boolean;
+  options: Option[];
+}

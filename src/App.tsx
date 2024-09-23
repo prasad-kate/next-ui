@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Buttons from "./Pages/Buttons/Buttons";
 import Inputs from "./Pages/Inputs";
+import GlobalInputs from "./Pages/GlobalInputs";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Navigate to={"/buttons"} />} />
         <Route path="/buttons" element={Buttons} />
         <Route path="/inputs" element={Inputs} />
+        <Route path="/global-inputs" element={GlobalInputs} />
       </Routes>
     </BrowserRouter>
   );

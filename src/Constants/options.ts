@@ -13,3 +13,9 @@ export const animals = [
   { key: "otter", label: "Otter" },
   { key: "crocodile", label: "Crocodile" },
 ];
+
+export const sampleOptions = [
+  { value: "option1", display_name: "Option 1" },
+  { value: "option2", display_name: "Option 2" },
+  { value: "option3", display_name: "Option 3" },
+];

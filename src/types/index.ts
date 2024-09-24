@@ -1,4 +1,9 @@
-import { DatePickerProps, InputProps, SelectProps } from "@nextui-org/react";
+import {
+  DatePickerProps,
+  InputProps,
+  RadioGroupProps,
+  SelectProps,
+} from "@nextui-org/react";
 import { ReactNode } from "react";
 
 export interface RootLayoutProps {
@@ -46,5 +51,15 @@ export interface GlobalSelectInputProps
   name: string;
   label: string;
   required?: boolean;
+  options: Option[];
+}
+
+export interface Option {
+  value: string;
+  display_name: string;
+}
+
+export interface GlobalRadioButtonProps extends RadioGroupProps {
+  name: string;
   options: Option[];
 }

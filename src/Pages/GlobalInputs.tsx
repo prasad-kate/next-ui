@@ -5,6 +5,7 @@ import TextAreaInput from "../components/TextArea";
 import TextInput from "../components/TextInput";
 import { sampleOptions } from "../Constants/options";
 import WithRootLayout from "../HOCs/withRootLayout";
+import RadioButton from "./Inputs/components/RadioButtons";
 
 function GlobalInputs() {
   const methods = useForm();
@@ -24,6 +25,12 @@ function GlobalInputs() {
           name="textAreaInput"
           label="Text-area Input"
           minRows={2}
+        />
+        <RadioButton
+          name="radioButtons"
+          label="Radio Buttons"
+          options={sampleOptions}
+          orientation="horizontal"
         />
       </div>
     </FormProvider>

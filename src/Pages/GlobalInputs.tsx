@@ -7,6 +7,7 @@ import { sampleOptions } from "../Constants/options";
 import WithRootLayout from "../HOCs/withRootLayout";
 import RadioButton from "../components/RadioButtons";
 import Checkbox from "../components/CheckBox";
+import Switch from "../components/Switch";
 
 function GlobalInputs() {
   const methods = useForm();
@@ -39,6 +40,7 @@ function GlobalInputs() {
           options={sampleOptions}
           orientation="horizontal"
         />
+        <Switch name="switch" label="Switch" />
       </div>
     </FormProvider>
   );

@@ -5,6 +5,7 @@ import {
   InputProps,
   RadioGroupProps,
   SelectProps,
+  SwitchProps,
 } from "@nextui-org/react";
 import { ReactNode } from "react";
 
@@ -76,4 +77,9 @@ export interface GlobalCheckboxGroupProps extends CheckboxGroupProps {
   label: string;
   required?: boolean;
   options: Option[];
+}
+
+export interface GlobalSwitchProps extends SwitchProps {
+  name: string;
+  label?: string;
 }

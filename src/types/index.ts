@@ -1,4 +1,6 @@
 import {
+  CheckboxGroupProps,
+  CheckboxProps,
   DatePickerProps,
   InputProps,
   RadioGroupProps,
@@ -61,5 +63,17 @@ export interface Option {
 
 export interface GlobalRadioButtonProps extends RadioGroupProps {
   name: string;
+  options: Option[];
+}
+
+export interface GlobalCheckboxProps extends CheckboxProps {
+  name: string;
+  options: Option[];
+}
+
+export interface GlobalCheckboxGroupProps extends CheckboxGroupProps {
+  name: string;
+  label: string;
+  required?: boolean;
   options: Option[];
 }

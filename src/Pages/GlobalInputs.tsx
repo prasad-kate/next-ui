@@ -6,6 +6,7 @@ import TextInput from "../components/TextInput";
 import { sampleOptions } from "../Constants/options";
 import WithRootLayout from "../HOCs/withRootLayout";
 import RadioButton from "../components/RadioButtons";
+import Checkbox from "../components/CheckBox";
 
 function GlobalInputs() {
   const methods = useForm();
@@ -29,6 +30,12 @@ function GlobalInputs() {
         <RadioButton
           name="radioButtons"
           label="Radio Buttons"
+          options={sampleOptions}
+          orientation="horizontal"
+        />
+        <Checkbox
+          name="checkbox"
+          label="Checkbox"
           options={sampleOptions}
           orientation="horizontal"
         />

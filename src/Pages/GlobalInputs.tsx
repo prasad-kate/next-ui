@@ -5,7 +5,7 @@ import TextAreaInput from "../components/TextArea";
 import TextInput from "../components/TextInput";
 import { sampleOptions } from "../Constants/options";
 import WithRootLayout from "../HOCs/withRootLayout";
-import RadioButton from "./Inputs/components/RadioButtons";
+import RadioButton from "../components/RadioButtons";
 
 function GlobalInputs() {
   const methods = useForm();

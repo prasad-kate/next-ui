@@ -1,6 +1,6 @@
 import { Radio, RadioGroup } from "@nextui-org/react";
 import { Controller, useFormContext } from "react-hook-form";
-import { GlobalRadioButtonProps } from "../../../types";
+import { GlobalRadioButtonProps } from "../types";
 
 const RadioButton = ({ name, options, ...rest }: GlobalRadioButtonProps) => {
   const { control } = useFormContext();
